@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omar Ramirez Itamary</title>
+    <link rel="stylesheet" href="/styles/pagina3.css" />
+    <script>
+      function validateForm() {
+        var productname = document.forms["Form"]["nombreproducto"].value;
+        var quantity = document.forms["Form"]["cantidad"].value;
+        var unitprice = document.forms["Form"]["preciounitario"].value;
+        if (productname == "") {
+          alert("El nombre del producto debe ser completado");
+          return false;
+        }
+        if (quantity == "" || quantity < 0) {
+          alert("La cantidad debe ser un número positivo");
+          return false;
+        }
+        if (unitprice == "" || unitprice < 0) {
+          alert("El precio unitario debe ser un número positivo");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Formulario de Producto</h2>
+
+    <form name="Form" onsubmit="return validateForm()">
+      Nombre del Producto:<br />
+      <input type="text" name="nombreproducto" /><br />
+      Cantidad:<br />
+      <input type="number" name="cantidad" /><br />
+      Precio Unitario:<br />
+      <input type="number" name="preciounitario" /><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

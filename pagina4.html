@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cristhian herrera rojas</title>
+    <link rel="stylesheet" href="/styles/pagina4.css" />
+    <script>
+      function calculateTotal() {
+        var quantity = document.getElementById("quantity").value;
+        var unitprice = document.getElementById("unitprice").value;
+        var total = quantity * unitprice;
+        alert("El total a cobrar es: " + total);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Calculadora de Cobro</h2>
+
+    Cantidad:<br />
+    <input type="number" id="quantity" /><br />
+    Precio Unitario:<br />
+    <input type="number" id="unitprice" /><br /><br />
+    <button onclick="calculateTotal()">Cobrar</button>
+  </body>
+</html>

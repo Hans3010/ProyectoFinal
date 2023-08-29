@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carlos Mauricio Rivera Viruez</title>
+    <link rel="stylesheet" href="/styles/pagina2.css" />
+    <script>
+      function validateForm() {
+        const x = document.forms["form"]["Nombre"].value;
+        if (x == "") {
+          alert("El nombre debe ser completado");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Tabla de Ejemplo</h2>
+
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+      </tr>
+      <tr>
+        <td>Juan</td>
+        <td>Pérez</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>García</td>
+        <td>25</td>
+      </tr>
+    </table>
+
+    <h2>Formulario de Ejemplo</h2>
+
+    <form name="form" onsubmit="return validateForm()">
+      Nombre:<br />
+      <input type="text" name="Nombre" /><br />
+      Apellido:<br />
+      <input type="text" name="Apellido" /><br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
