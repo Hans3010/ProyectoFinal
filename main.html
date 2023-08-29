@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <script src="/js/scrollreveal.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="/js/mixitup.min.js" defer></script>
+    <script src="/js/main.js" defer></script>
+    <title>Duros SRL.</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">DUROS SRL</a>
+        <div class="nav_menu" id="nav-menu">
+          <div class="nav_close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav_link">Nosotros</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav_link">Productos</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="home_container container grid">
+          <div class="home_data">
+            <h1 class="home_title"><span class="title-color"></span></h1>
+            <p class="home_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              nobis libero fuga assumenda temporibus corrupti ea modi architecto
+              eveniet quos, enim quod accusantium beatae, alias ad ipsam sit
+              incidunt illo!
+            </p>
+          </div>
+          <div class="home_social">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="home_social-link"
+            >
+              <i class="bx bxl-facebook home_social-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="home_social-link"
+            >
+              <i class="bx bxl-instagram-alt home_social-icon"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="home_social-link"
+            >
+              <i class="bx bxl-twitter home_social-icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="suscribe" id="suscribe">
+        <div class="suscribe_container container">
+          <h2 class="suscribe_title">¿Te gustaria recibir nuestro cemento?</h2>
+          <form class="suscribe_form grid">
+            <input
+              class="suscribe_input"
+              type="text"
+              placeholder="Deja tu correo aquí..."
+            />
+            <button class="suscribe_button" type="button">¡Listo!</button>
+          </form>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about_container container">
+          <h2 class="about_title">Acerca de Nosotros</h2>
+          <div class="about_data">
+            <div class="about_text">
+                <a href="#">Carlos Mauricio Rivera Viruez</a> <br>
+                <a href="#">Omar Ramirez Itamary</a> <br>
+                <a href="#">Cristhian herrera rojas</a> <br>
+                <a href="#">Alejandro Molina Clementelli</a>   
+            </div>
+          </div>
+        </div>
+      </section>
+        <div class="products" id="products">
+          <div class="products_container container">
+            <h2 class="productss">Productos</h2>
+            <div class="productss">
+              <img class="productss" src="/img/C2.png" alt="" />
+              <img class="productss" src="/img/C1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="contact" id="contact">
+        <div class="contact_container container">
+          <h2 class="contact_title">Contacto</h2>
+          <div class="contact_content grid">
+            <div class="contact_data grid">
+              <div>
+                <div class="contact_info">
+                  <i class="bx bx-phone contact_info-icon"></i>
+                  <div>
+                    <h3 class="contact_info-title">Número</h3>
+                    <span class="contact_info-subtitle">999-999-999</span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="contact_info">
+                  <i class="bx bx-envelope contact_info-icon"></i>
+                  <div>
+                    <h3 class="contact_info-title">Correo</h3>
+                    <span class="contact_info-subtitle"
+                      >DurosSrl@empresa.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="contact_info">
+                  <i class="bx bx-map contact_info-icon"></i>
+                  <div>
+                    <h3 class="contact_info-title">Dirección</h3>
+                    <span class="contact_info-subtitle"
+                      >Santa Cruz - Bolivia</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="contact_form">
+              <div class="contact_inputs grid">
+                <div class="contact_group">
+                  <label for="" class="contact_label">Nombre</label>
+                  <input type="text" class="contact_input" />
+                </div>
+                <div class="contact_group">
+                  <label for="" class="contact_label">Correo</label>
+                  <input type="email" class="contact_input" />
+                </div>
+                <div class="contact_group">
+                  <label for="" class="contact_label">Proyecto</label>
+                  <input type="text" class="contact_input" />
+                </div>
+                <div class="contact_group">
+                  <label for="" class="contact_label">Mensaje</label>
+                  <textarea cols="0" rows="10" class="contact_input"></textarea>
+                </div>
+                <div class="contact_button">
+                  <a href="#" class="contact_button-btn"> Enviar Mensaje </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_container container">
+        <p class="footer_copy">
+          <span class="copy-size">DUROS SRL.</span> &copy; 2023. Todos los
+          derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
